@@ -24,6 +24,6 @@ echo "https://checkout.stripe.com/api/color?image_url=" | nuclei -t ssrf.yaml
 
 - [x] WAF bypass by changing scheme:
 ```
-http://web.com/?XSSendpoint   # ===> no WAF
-https://web.com/?XSSendpoint   # ===> WAF implemented
+http://web.com/?XSSendpoint ===> no WAF
+https://web.com/?XSSendpoint ===> WAF implemented
 ```
