@@ -5,7 +5,7 @@
 
 **Cyllabus** 
 
-- [ ] SSRF nuclei template - Feed endpoints with query params to probe for SSRF interaction automatically, the module tries to fetch simple interaction on the provided query params, and later appends common SSRF path's to the original request.
+- [x] SSRF nuclei template - Feed endpoints with query params to probe for SSRF interaction automatically, the module tries to fetch simple interaction on the provided query params, and later appends common SSRF path's to the original request.
 
 Sample:
 
