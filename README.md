@@ -27,3 +27,11 @@ echo "https://checkout.stripe.com/api/color?image_url=" | nuclei -t ssrf.yaml
 http://web.com/?XSSendpoint ===> no WAF
 https://web.com/?XSSendpoint ===> WAF implemented
 ```
+
+
+### Subdomain Reconnaissance
+
+- [x] CIDR to hostnames
+```
+prips 144.160.32.0/19 | hakrevdns  -d | httpx -title -status-code -follow-redirects
+```
