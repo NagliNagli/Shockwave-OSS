@@ -1,6 +1,8 @@
-# BountyTricks
+<p align="center">
+<h1> BountyTricks </h1>
+</p>
 
-**Sharing Bug Bounty tricks and treats with the community: automation, one liners and useful data** 
+**Sharing Bug Bounty tricks and treats with the community including but not limited to automation, one liners and useful thoughts** 
 
 
 **Cyllabus** 
@@ -12,3 +14,5 @@ Sample:
 ```
 echo "https://checkout.stripe.com/api/color?image_url=" | nuclei -t ssrf.yaml 
 ```
+
+![nuclei_ssrf](https://raw.githubusercontent.com/NagliNagli/BountyTricks/main/media/nuclei_ssrf.png)
