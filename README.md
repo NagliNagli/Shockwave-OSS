@@ -35,3 +35,8 @@ https://web.com/?XSSendpoint ===> WAF implemented
 ```
 prips 144.160.32.0/19 | hakrevdns  -d | httpx -title -status-code -follow-redirects
 ```
+
+
+# Disclaimer
+
+Some of the one liners or data presented might be taken from other repos and was tampered by me, I only share here stuff I use regulary or encountered in the last year, if you find here anything that was originally crafted by you lemme know and I'll credit you.
