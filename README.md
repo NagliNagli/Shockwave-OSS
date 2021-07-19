@@ -7,7 +7,24 @@
 
 **Cyllabus** 
 
-### Private Nuclei templates
+## :guardsman:  Misc
+
+[Regex Validator](https://www.debuggex.com/)
+
+[Homograph Generator](https://www.irongeek.com/homoglyph-attack-generator.php)
+
+[Shodan-Scripts](https://github.com/random-robbie/My-Shodan-Scripts/tree/1b01bceecc9be0b74b202f445874920eee48bba5)
+
+[HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+
+[MIME Types](https://www.iana.org/assignments/media-types/media-types.xhtml)
+
+[Reverse-Proxies](https://github.com/GrrrDog/weird_proxies)
+
+[Writeups](https://github.com/ngalongc/bug-bounty-reference)
+
+
+### :guardsman: Private Nuclei templates
 
 - [x] SSRF nuclei template - Feed endpoints to probe for SSRF interaction automatically, the module tries to fetch simple interaction on the provided input, and later appends common SSRF query params to the original request.
 
