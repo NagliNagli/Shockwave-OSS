@@ -75,6 +75,61 @@ Takeaway: Swap identifyable cookie values between lateral accounts.
 Takeaway: Look through org's public repos for Bitbucket content
 ```
 
+* [Java RCE via POST request "month" parameter](https://hackerone.com/reports/987065) - The month parameter was vulnerable to code injection with the following payload: 1${T(java.lang.System).getenv()}
+
+```
+Takeaway: When Fuzzing java application to try and insert code injection queries like ${T(java.lang.System).getenv()}
+```
+
+* [SSO takeover while adding trailing space](https://hackerone.com/reports/976603) - Adding trailing space to the organisation name would trim it whenever user tried to authenticate
+
+```
+Takeaway: When supplying org name check what is the behaviour with adding " " (space) on it's name
+```
+
+* [Host Header Cache Poisoning to DOS via appending port number](https://hackerone.com/reports/1096609)
+
+```
+Takeaway: Tampering with the host header with situations who involve caching, can append port to the host to cause DOS
+```
+
+* [Firebase API link shortening key exposed in JS file](https://hackerone.com/reports/1066410)
+
+```
+Takeaway: Go through the "main.slug.js" files and look for API Keys, this one looks like the google maps one (AI....)
+```
+
+* [Open S3 bucket discloses all uploaded images](https://hackerone.com/reports/905641)
+
+```
+Takeaway: Look for websites who has bucket like https://s3.amazonaws.com/BUCKETNAME and try to run aws s3 ls BUCKETNAME
+```
+
+* [Reset any password due to no rate limit on 6 digit OTP](https://hackerone.com/reports/703972)
+
+```
+Takeaway: Check each step of reset password phase who might not be protected with rate limiting, this could even be a third step after clicking an email, allowing to skip phase 2.
+```
+
+* [Adming password was exposed on javascript source file](https://hackerone.com/reports/344566)
+
+```
+Takeaway: on Admin / custom made login panels check the source code to determine if there are some leaks including password.
+```
+
+* [SSRF through image parameter](https://hackerone.com/reports/826097)
+
+* [SQLI via "features" get parameter - WAF bypass](https://hackerone.com/reports/1039383)
+
+```
+Takeaway: %27||/**/(case%20when(/*%c3*/length/*%c3*/(user)=5)then/**/(1)else(1/0)end)||%27
+```
+
+* [Open redirect on OAuth flow](https://hackerone.com/reports/972601)
+
+```
+Takeaway: Change the scope parameter to arbitrary file and see if the redirect_url will redirect to external domain
+```
 
 # Disclaimer
 
