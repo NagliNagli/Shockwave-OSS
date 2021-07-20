@@ -25,6 +25,21 @@
 
 [HTTP Request Smuggling](https://github.com/defparam/smuggler)
 
+- [x] Github local recon - usage: gitsecrets “word” | gf pattern
+
+```
+gitsecrets(){
+{ find .git/objects/pack/ -name "*.idx"|while read i;do git show-index < "$i"|awk '{print $2}';done;find .git/objects/ -type f|grep -v '/pack/'|awk -F'/' '{print $(NF-1)$NF}'; }|while read o;do git cat-file -p $o;done|grep -E "$1"
+}
+```
+
+- [x] ffuf on many files
+
+```
+ffuf -u URL/FUZZ -w allipstoffuf:URL -w ~/.config/wordlists/envpath:FUZZ -maxtime 300 -t 500 -c -v
+```
+
+
 
 ### :guardsman: Private Nuclei templates
 
@@ -49,6 +64,22 @@ https://web.com/?XSSendpoint ===> WAF implemented
 
 
 ### Subdomain Reconnaissance
+
+### Root Domains
+- [x] Google Dorks:
+```
+Root Domains - "org" subsidiaries
+intext: credit company
+```
+
+- [x] Amass
+```
+1. Get company's ASN numbers - amass intel -org DoD
+2. Turn ASN numbers into CIDR - whois -h whois.radb.net -- "-i origin $asn" | grep -Eo "([0-9.]+){4}/[0-9]+" | sort -u >> $recondir/cidr
+3. Get TLDS from ASN - amass intel -asn $asn
+4. Get TLDS from whois data - amass intel -whois -d TLD (facebook.com)
+5. Get TLDS from CIDR - amass intel -cidr xxxxxx/23
+```
 
 - [x] CIDR to hostnames
 ```
