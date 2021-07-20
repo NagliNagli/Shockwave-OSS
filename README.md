@@ -23,6 +23,8 @@
 
 [Writeups](https://github.com/ngalongc/bug-bounty-reference)
 
+[HTTP Request Smuggling](https://github.com/defparam/smuggler)
+
 
 ### :guardsman: Private Nuclei templates
 
