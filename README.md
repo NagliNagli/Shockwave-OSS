@@ -2,6 +2,14 @@
 <h1> BountyTricks </h1>
 </p>
 
+## Bug Bounty Phonebook - [reference](https://twitter.com/naglinagli/status/1418669081549578244)
+
+Twitter handle | Expertee
+------------ | -------------
+[d00xing](https://twitter.com/d00xing)| Recon / Subdomain Takeovers expert , top 2 H1 leaderboard 2020-202x
+Content in the first column | Content in the second column
+
+
 **Sharing Bug Bounty tips and tricks with the community including but not limited to automation, one liners and useful thoughts** 
 
 
