@@ -7,7 +7,8 @@
 Twitter handle | Expertee
 ------------ | -------------
 [d00xing](https://twitter.com/d00xing)| Recon / Subdomain Takeovers expert , top 2 H1 leaderboard 2020-202x
-Content in the first column | Content in the second column
+[@m0chan98](https://twitter.com/m0chan98) | Recon / Subdomain Takeovers expert, top 3 H1 leaderboard 2020-202x
+
 
 
 **Sharing Bug Bounty tips and tricks with the community including but not limited to automation, one liners and useful thoughts** 
