@@ -1,0 +1,22 @@
+id: polyfill-backdoor-detect
+
+info:
+  name: Polyfill Detect
+  author: shockwave
+  severity: critical
+  metadata:
+    max-request: 1
+    verified: true
+  tags: polyfill
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    redirects: true
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "polyfill.io"
